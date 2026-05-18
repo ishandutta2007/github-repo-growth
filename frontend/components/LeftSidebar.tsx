@@ -4,7 +4,7 @@ import leaderboardData from "@gh-data/leaderboard.json"
 import weeklyRankingData from "@gh-data/weekly-ranking.json"
 import starCountData from "@gh-data/star-count.json"
 import { formatNumber } from "../helpers/format"
-import { EASTER_EGG_REPOS } from "../helpers/consts"
+import { BASE_PATH, EASTER_EGG_REPOS } from "../helpers/consts"
 
 const leaderboard = leaderboardData as { updated_at: string; repos: { name: string; stars_total: number }[] }
 const weeklyRanking = weeklyRankingData as { updated_at: string; repos: { name: string; new_stars: number; stars_total: number }[] }
@@ -101,14 +101,14 @@ const LeftSidebar: React.FC = () => {
                                         {EASTER_EGG_REPOS.has(item.name.toLowerCase()) ? (
                                             <span className="flex-1 min-w-0 relative h-6 lobster-container">
                                                 <img
-                                                    src="/assets/lobster.png"
+                                                    src={`${BASE_PATH}/assets/lobster.png`}
                                                     alt="Lobster"
                                                     width={20}
                                                     height={20}
                                                     className="lobster-static absolute top-0 bottom-0 my-auto left-0"
                                                 />
                                                 <img
-                                                    src="/assets/lobster-animated.gif"
+                                                    src={`${BASE_PATH}/assets/lobster-animated.gif`}
                                                     alt="Lobster"
                                                     width={20}
                                                     height={20}

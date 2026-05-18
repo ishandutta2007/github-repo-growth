@@ -12,7 +12,7 @@ import path from "path"
 import fs from "fs/promises"
 import blogs from "helpers/blog.json"
 import Head from "next/head"
-import { SITE_URL } from "../../helpers/consts"
+import { SITE_URL, BASE_PATH } from "../../helpers/consts"
 
 interface Blog {
     title: string
@@ -108,7 +108,7 @@ const BlogPost: React.FC<State> = ({ blog, prevBlog, nextBlog, parsedBlogHTML, t
                                         </time>
                                     </div>
                                     {blog.featureImage && (
-                                        <img className="w-full max-w-4xl mt-6 object-scale-down rounded" src={blog.featureImage} alt={blog.title} />
+                                        <img className="w-full max-w-4xl mt-6 object-scale-down rounded" src={`${BASE_PATH}${blog.featureImage}`} alt={blog.title} />
                                     )}
                                     <div className="mt-8 w-full max-w-4xl prose prose-indigo prose-lg" dangerouslySetInnerHTML={{ __html: parsedBlogHTML || "" }} />
                                 </div>
@@ -205,7 +205,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
         const headingSlugCounts: Record<string, number> = {}
 
         renderer.heading = function (text: string, level: number) {
-            let slug = slugify(text.replace(/<[^>]+>/g, ''))
+            let slug = slugify(text.replace(/<[^>]+>/g, ""))
 
             // Handle duplicate slugs
             if (headingSlugCounts[slug] !== undefined) {
@@ -216,6 +216,13 @@ export async function getStaticProps(context: GetStaticPropsContext) {
             }
 
             return `<h${level} id="${slug}">${text}</h${level}>\n`
+        }
+
+        renderer.image = function (href: string, title: string, text: string) {
+            if (href.startsWith("/")) {
+                href = `${BASE_PATH}${href}`
+            }
+            return `<img src="${href}" title="${title || ""}" alt="${text || ""}">`
         }
 
         const parsedBlogHTML = marked.parse(content, { renderer }) as string

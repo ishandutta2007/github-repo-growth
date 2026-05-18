@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: 'https://www.star-history.com',
+    siteUrl: 'https://ishandutta2007.github.io/github-repo-growth',
     outDir: 'out',
     generateRobotsTxt: true,
     robotsTxtOptions: {

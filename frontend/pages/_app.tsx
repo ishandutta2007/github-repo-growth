@@ -6,6 +6,7 @@ import Head from "next/head"
 import Script from "next/script"
 import ErrorBoundary from "../components/ErrorBoundary"
 import { AppStateProvider } from "../store"
+import { BASE_PATH } from "../helpers/consts"
 
 export type NextPageWithLayout = NextPage & {
     getLayout?: (_page: React.ReactElement) => React.ReactNode
@@ -21,7 +22,7 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
     return (
         <>
             <Head>
-                <link rel="icon" href="/assets/favicon.ico" />
+                <link rel="icon" href={`${BASE_PATH}/assets/favicon.ico`} />
             </Head>
             <Script defer data-domain="star-history.com" src="https://plausible.io/js/script.js" strategy="afterInteractive" />
             <AppStateProvider>

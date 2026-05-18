@@ -9,7 +9,7 @@ import { loadRepos } from "@shared/common/repo-data"
 import type { RepoCardData } from "@shared/types/gh"
 import PageShell from "../components/PageShell"
 import toast from "../helpers/toast"
-import { SITE_URL, API_URL, EASTER_EGG_REPOS } from "../helpers/consts"
+import { SITE_URL, API_URL, EASTER_EGG_REPOS, BASE_PATH } from "../helpers/consts"
 import InteractiveRadar from "../components/InteractiveRadar"
 import { buildLandscape1 } from "@shared/packages/card-landscape1"
 import { renderRadarSvg } from "@shared/packages/radar-svg"
@@ -155,7 +155,7 @@ const RepoPage: NextPage<RepoPageProps> = ({ repo, minStars, prevRepo, nextRepo 
         radarSvgBase64,
         attributes: hasAttributes ? repo.attributes : null,
         rank: repo.rank,
-        logoBase64: "/assets/logo-icon.png",
+        logoBase64: `${BASE_PATH}/assets/logo-icon.png`,
     }), [repo, radarSvgBase64])
 
     // Scale the native 1200×630 card to fit the container
@@ -351,7 +351,7 @@ const RepoPage: NextPage<RepoPageProps> = ({ repo, minStars, prevRepo, nextRepo 
             </Head>
             <PageShell header={
                 <Link href="/">
-                    <img src="/assets/logo-full.svg" alt="Star History" className="h-8 mb-4" />
+                    <img src={`${BASE_PATH}/assets/logo-full.svg`} alt="Star History" className="h-8 mb-4" />
                 </Link>
             }>
                 <Toolbar onDownload={handleDownload} downloading={downloading} tweetUrl={tweetUrl} />
@@ -424,7 +424,7 @@ const RepoPage: NextPage<RepoPageProps> = ({ repo, minStars, prevRepo, nextRepo 
                 {EASTER_EGG_REPOS.has(repo.name.toLowerCase()) && (
                     <div className="relative w-full max-w-5xl h-16 mt-4">
                         <img
-                            src="/assets/lobster-animated.gif"
+                            src={`${BASE_PATH}/assets/lobster-animated.gif`}
                             alt="Lobster"
                             width={64}
                             height={64}

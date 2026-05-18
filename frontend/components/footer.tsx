@@ -1,5 +1,6 @@
 import { FaEnvelope, FaRss } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
+import { BASE_PATH } from "../helpers/consts"
 
 const Footer = () => {
     return (
@@ -19,20 +20,20 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-row flex-wrap items-center space-x-4">
                     <div className="flex flex-row link-footer">
-                        <img className="h-4 mt-2 mr-1" src="/assets/pgconsole.svg" alt="pgconsole" />
+                        <img className="h-4 mt-2 mr-1" src={`${BASE_PATH}/assets/pgconsole.svg`} alt="pgconsole" />
                         <a href="https://www.pgconsole.com" target="_blank" rel="noopener noreferrer">
                             {" "}
                             pgconsole{" "}
                         </a>
                     </div>
                     <div className="flex flex-row link-footer">
-                        <img className="h-4 mt-2 mr-1" src="/assets/pgschema.webp" alt="DB Cost" />
+                        <img className="h-4 mt-2 mr-1" src={`${BASE_PATH}/assets/pgschema.webp`} alt="DB Cost" />
                         <a href="https://www.pgschema.com/" target="_blank" rel="noopener noreferrer">
                             pgschema
                         </a>
                     </div>
                     <div className="flex flex-row link-footer">
-                        <img className="h-4 mt-2 mr-1" src="/assets/dbhub.svg" alt="dbhub" />
+                        <img className="h-4 mt-2 mr-1" src={`${BASE_PATH}/assets/dbhub.svg`} alt="dbhub" />
                         <a href="https://dbhub.ai" target="_blank" rel="noopener noreferrer">
                             {" "}
                             DBHub{" "}

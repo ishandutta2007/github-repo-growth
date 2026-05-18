@@ -6,6 +6,7 @@ const ghDataDir = path.resolve(__dirname, "../gh/data");
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
+    basePath: "/github-repo-growth",
     webpack: (config, { defaultLoaders }) => {
         config.resolve.alias["@shared"] = sharedDir;
         config.resolve.alias["@gh-data"] = ghDataDir;
