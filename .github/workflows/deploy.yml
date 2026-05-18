@@ -35,21 +35,15 @@ jobs:
             frontend/pnpm-lock.yaml
             gh/pnpm-lock.yaml
 
-      - name: Install gh dependencies
-        run: pnpm install
-        working-directory: gh
+      - name: Install dependencies
+        run: |
+          pnpm install --filter gh... --filter frontend...
 
       - name: Generate data
-        run: pnpm run star:generate
-        working-directory: gh
+        run: pnpm --filter gh run star:generate
 
-      - name: Install frontend dependencies
-        run: pnpm install
-        working-directory: frontend
-
-      - name: Build with Next.js
-        run: pnpm run build
-        working-directory: frontend
+      - name: Build frontend
+        run: pnpm --filter frontend run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
