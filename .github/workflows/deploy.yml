@@ -43,7 +43,7 @@ jobs:
         run: pnpm --filter gh run star:generate
 
       - name: Build frontend
-        run: pnpm --filter frontend run build
+        run: cd frontend && pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
