@@ -15,5 +15,5 @@ RUN pnpm build
 EXPOSE 8080
 
 # Command to run the server
-# Ensure your server script (e.g., server.js) listens on port 8080 or uses the PORT environment variable
+# Ensure your server script (e.g. server.js) listens on port 8080 or uses the PORT environment variable
 CMD ["node", "server.js"]
