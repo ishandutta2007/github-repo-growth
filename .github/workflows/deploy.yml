@@ -42,7 +42,7 @@ jobs:
         run: cd gh && pnpm install
 
       - name: Generate data
-        run: cd gh && pnpm run star:generate
+        run: node gh/star-generate-cli.js
 
       - name: Install frontend dependencies
         run: cd frontend && pnpm install
