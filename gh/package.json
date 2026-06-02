@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@google-cloud/bigquery": "^7.9.0",
-    "better-sqlite3": "^11.7.0"
+    "better-sqlite3": "^11.7.0",
+    "clean": "^4.0.2"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.12",

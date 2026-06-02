@@ -20,18 +20,17 @@
 
 ---
 
-<a href="https://www.star-history.com/?repos=star-history%2Fstar-history&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=star-history/star-history&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=star-history/star-history&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=star-history/star-history&type=date&legend=top-left" />
- </picture>
-</a>
+### 📊 Live Embedding
 
-👆 **THIS** is a **`live`** chart created with the following html: 👇
+You can embed live charts and badges directly into your GitHub README or website.
 
-<div align="left">
+| Style | Example Preview | HTML Snippet |
+| :--- | :--- | :--- |
+| **Standard Chart** | <a href="https://star-history.com/star-history/star-history"><img width="300" src="https://api.star-history.com/chart?repos=star-history/star-history&type=date&theme=light" /></a> | See below |
+| **Landscape Card** | <a href="https://star-history.com/star-history/star-history"><img width="300" src="https://api.star-history.com/chart?repos=star-history/star-history&style=landscape1" /></a> | See below |
+| **Global Rank Badge** | <a href="https://star-history.com/star-history/star-history"><img src="https://api.star-history.com/badge?repo=star-history/star-history" /></a> | See below |
 
+#### Standard Chart Snippet
 ```html
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=star-history/star-history&type=date&theme=dark&legend=top-left" />
@@ -40,20 +39,7 @@
 </picture>
 ```
 
-</div>
-
-<a href="https://star-history.com/star-history/star-history">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=star-history/star-history&style=landscape1&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=star-history/star-history&style=landscape1" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=star-history/star-history&style=landscape1" />
- </picture>
-</a>
-
-👆 **THIS** is also a **`live`** chart with global rank and weekly stats: 👇
-
-<div align="left">
-  
+#### Landscape Card Snippet
 ```html
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=star-history/star-history&style=landscape1&theme=dark" />
@@ -62,35 +48,14 @@
 </picture>
 ```
 
-<p align="center">
- <a href="https://www.star-history.com/star-history/star-history">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=star-history/star-history&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=star-history/star-history" />
-    <img alt="Star History Rank" src="https://api.star-history.com/badge?repo=star-history/star-history" />
-  </picture>
- </a>
-</p>
-
-👆 **THIS** is also a **`live`** badge with global rank: 👇
-
-<div align="left">
-  
+#### Global Rank Badge Snippet
 ```html
-<p align="center">
- <a href="https://www.star-history.com/star-history/star-history">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=star-history/star-history&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=star-history/star-history" />
-    <img alt="Star History Rank" src="https://api.star-history.com/badge?repo=star-history/star-history" />
-  </picture>
- </a>
-</p>
+<a href="https://star-history.com/star-history/star-history">
+  <img alt="Star History Rank" src="https://api.star-history.com/badge?repo=star-history/star-history" />
+</a>
 ```
 
-</div>
-
-</div>
+---
 
 ## 🎁 Sponsors
 
@@ -142,39 +107,49 @@
 
 ## 🏗 Development
 
-**`Star-history`** is built using a **modern tech stack**: **`Next.js`** + **`TailwindCSS`**.
+Star-history consists of a **Frontend** (Next.js), a **Backend** (Hono), and a **Data Pipeline** (gh).
 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/en/download/)
 - [pnpm](https://pnpm.io/)
+- [sqlite3](https://sqlite.org/download.html) (required for the data pipeline)
 
-### Homepage
+### 1. Data Pipeline (Required for Frontend)
 
-**Homepage** of star-history with most of useful features and blogs about open source.
-
-```shell
-cd frontend && pnpm i && pnpm dev
-```
-
-The website will be served at http://localhost:3000.
-
-### Chrome Extension
-
-**Chrome extension** supports the **basic chart viewer** as a **free** additional product.
+The frontend depends on JSON data generated from the `gh` pipeline. Generate these files first:
 
 ```shell
-cd frontend && pnpm build:ext
+# Generate data files from star.db
+node gh/star-generate-cli.js
 ```
 
-Load the built `./dist` folder as **unpacked project** to chrome extensions page.
+### 2. Frontend
 
-### API Server
-
-**API server** is an **`experimental feature`**. It's mainly used to **generate chart `SVG`** image file that can be embeded into **`GitHub readme`**.
+The main website at [star-history.com](https://star-history.com).
 
 ```shell
-cd backend && pnpm i && pnpm dev
+cd frontend
+pnpm install
+pnpm dev
 ```
+Website runs at http://localhost:3000.
 
-The API server will be running on http://localhost:8080.
+### 3. Backend (API Server)
+
+Generates SVG charts and OG cards. Requires a `token.env` file in the `backend/` directory with GitHub tokens (one per line).
+
+```shell
+cd backend
+pnpm install
+pnpm dev
+```
+API runs at http://localhost:8080.
+
+### 4. Chrome Extension
+
+```shell
+cd frontend
+pnpm build:ext
+```
+Load the `./dist` folder as an unpacked project in your Chrome extensions page.
