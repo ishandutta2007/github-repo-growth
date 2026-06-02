@@ -1,24 +1,3 @@
-<div align="center">
-
-🧩 [**Also available as a Chrome extension**](https://chrome.google.com/webstore/detail/star-history/iijibbcdddbhokfepbblglfgdglnccfn)
-
-<a href="https://www.star-history.com/star-history/star-history">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=star-history/star-history&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=star-history/star-history" />
-   <img alt="Star History Rank" src="https://api.star-history.com/badge?repo=star-history/star-history" />
- </picture>
-</a>
-
-# :sparkles: Star History :sparkles:
- 
-[**star-history.com**](https://star-history.com), **the de facto GitHub star history graph.**
-
-<img src="https://raw.githubusercontent.com/star-history/star-history/main/assets/nvidia-gtc-2026.webp" />
-
-</div>
-
----
 
 ### 📊 Live Embedding
 
@@ -56,12 +35,6 @@ You can embed live charts and badges directly into your GitHub README or website
 ```
 
 ---
-
-### PaddleOCR
-
-[PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR?utm_source=star-history) is a production-ready OCR & document AI for end-to-end text extraction and document understanding.
-
-<a href="https://github.com/PaddlePaddle/PaddleOCR?utm_source=star-history"><img src="https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/paddleocr/landing.webp" /></a>
 
 ## ✨ Features
 
