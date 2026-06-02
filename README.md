@@ -57,26 +57,6 @@ You can embed live charts and badges directly into your GitHub README or website
 
 ---
 
-## 🎁 Sponsors
-
-### Bytebase
-
-[Bytebase](https://bytebase.com?source=star-history) is an open source, web-based database schema change and version control tool for teams. Supporting MySQL, PostgreSQL, Oracle, MongoDB, Redis, Snowflake, ClickHouse, TiDB, Google Spanner.
-
-<a href="https://bytebase.com?source=star-history"><img src="https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/bytebase/landing.webp" /></a>
-
-### Dify
-
-[Dify](https://dify.ai/?utm_source=star-history) is an open source LLMOps platform that helps developers build AI applications more simply and quickly. Its core idea is to define various aspects of AI applications, including Prompts, Contexts, and Plugins, through declarative YAML files.
-
-<a href="https://dify.ai/?utm_source=star-history"><img src="https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/dify/landing.webp" /></a>
-
-### SerpApi
-
-[SerpApi](https://serpapi.com/?utm_source=starhistory) scrapes search engine results easily using a simple API, including Google, Google Maps, Amazon, and more
-
-<a href="https://serpapi.com/?utm_source=starhistory"><img src="https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/serpapi/landing.webp" /></a>
-
 ### PaddleOCR
 
 [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR?utm_source=star-history) is a production-ready OCR & document AI for end-to-end text extraction and document understanding.
