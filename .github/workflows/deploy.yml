@@ -35,20 +35,19 @@ jobs:
             frontend/pnpm-lock.yaml
             gh/pnpm-lock.yaml
 
-      - name: Install root dependencies
-        run: pnpm install
-
-      - name: Install gh dependencies
-        run: cd gh && pnpm install
+      - name: Install dependencies
+        run: |
+          pnpm install
+          cd gh && pnpm install --no-frozen-lockfile
+          cd ../frontend && pnpm install --no-frozen-lockfile
 
       - name: Generate data
         run: node gh/star-generate-cli.js
 
-      - name: Install frontend dependencies
-        run: cd frontend && pnpm install
-
       - name: Build frontend
-        run: cd frontend && pnpm run build
+        run: |
+          cd frontend
+          pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
