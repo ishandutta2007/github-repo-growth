@@ -91,7 +91,7 @@ When you are done, click **Generate token** at the bottom of the page.
 
 ![personal-token-copy](/assets/blog/how-to-use-github-star-history/personal-token-copy.webp)
 
-6. Go back to [star-history.com](/), and click **Edit Access Token**. Paste the token. (It's also where you edit in the future, when it expires and you'll need to generate a new one.) Hit **Save**, et voilà, the star history of all GitHub repos are at your fingertips. Simple as that.
+6. Go back to [ishandutta2007.github.io/github-repo-growth](/), and click **Edit Access Token**. Paste the token. (It's also where you edit in the future, when it expires and you'll need to generate a new one.) Hit **Save**, et voilà, the star history of all GitHub repos are at your fingertips. Simple as that.
 
 ![edit-gh-access-token](/assets/blog/how-to-use-github-star-history/edit-gh-access-token.webp)
 

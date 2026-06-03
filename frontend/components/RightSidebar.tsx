@@ -26,7 +26,7 @@ const RightSidebar: React.FC = () => {
                     </a>
                 ))}
                 <a
-                    href="mailto:star@bytebase.com?subject=I'm interested in sponsoring star-history.com"
+                    href="mailto:star@bytebase.com?subject=I'm interested in sponsoring ishandutta2007.github.io/github-repo-growth"
                     target="_blank"
                     className="w-full p-2 text-center bg-gray-50 text-xs leading-6 text-gray-400 rounded hover:underline hover:text-blue-600"
                 >

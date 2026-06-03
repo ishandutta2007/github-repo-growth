@@ -110,7 +110,7 @@ The project uses an **xkcd / hand-drawn aesthetic**. All interactive overlays an
 
 ## Backend (API Server)
 
-The `backend/` directory is a Hono server (deployed as `api.star-history.com`) that generates star history SVG charts and OG card images.
+The `backend/` directory is a Hono server (deployed as `api.ishandutta2007.github.io/github-repo-growth`) that generates star history SVG charts and OG card images.
 
 - **Dev**: `cd backend && pnpm dev`
 - **Build**: `cd backend && pnpm build`

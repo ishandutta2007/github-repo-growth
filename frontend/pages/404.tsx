@@ -55,7 +55,7 @@ const NotFound: NextPage<NotFoundProps> = ({ minStars }) => {
             <p className="text-lg font-medium">404, Not Found.</p>
             <p className="text-sm text-neutral-500 mt-2">
                 <Link href="/" className="link-action">
-                    Go to star-history.com
+                    Go to ishandutta2007.github.io/github-repo-growth
                 </Link>
             </p>
         </div>

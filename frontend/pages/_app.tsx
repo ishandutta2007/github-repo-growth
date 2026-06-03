@@ -24,7 +24,7 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
             <Head>
                 <link rel="icon" href={`${BASE_PATH}/assets/favicon.ico`} />
             </Head>
-            <Script defer data-domain="star-history.com" src="https://plausible.io/js/script.js" strategy="afterInteractive" />
+            <Script defer data-domain="ishandutta2007.github.io/github-repo-growth" src="https://plausible.io/js/script.js" strategy="afterInteractive" />
             <AppStateProvider>
                 <ErrorBoundary>
                     {getLayout(<Component {...pageProps} />)}

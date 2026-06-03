@@ -13,4 +13,4 @@ It didn't.
 
 OpenClaw has now crossed 250K+ stars, overtaking React to become the most-starred non-aggregator software project on GitHub — a title React held unchallenged for years. From zero to #1 in under four months, with no sign of slowing down.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=facebook/react,openclaw/openclaw,torvalds/linux&type=Date)](https://star-history.com/#facebook/react&openclaw/openclaw&torvalds/linux&Date)
+[![Star History Chart](https://api.ishandutta2007.github.io/github-repo-growth/svg?repos=facebook/react,openclaw/openclaw,torvalds/linux&type=Date)](https://ishandutta2007.github.io/github-repo-growth/#facebook/react&openclaw/openclaw&torvalds/linux&Date)

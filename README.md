@@ -5,32 +5,32 @@ You can embed live charts and badges directly into your GitHub README or website
 
 | Style | Example Preview | HTML Snippet |
 | :--- | :--- | :--- |
-| **Standard Chart** | <a href="https://star-history.com/star-history/star-history"><img width="300" src="https://api.star-history.com/chart?repos=star-history/star-history&type=date&theme=light" /></a> | See below |
-| **Landscape Card** | <a href="https://star-history.com/star-history/star-history"><img width="300" src="https://api.star-history.com/chart?repos=star-history/star-history&style=landscape1" /></a> | See below |
-| **Global Rank Badge** | <a href="https://star-history.com/star-history/star-history"><img src="https://api.star-history.com/badge?repo=star-history/star-history" /></a> | See below |
+| **Standard Chart** | <a href="https://ishandutta2007.github.io/github-repo-growth/star-history/star-history"><img width="300" src="https://api.ishandutta2007.github.io/github-repo-growth/chart?repos=star-history/star-history&type=date&theme=light" /></a> | See below |
+| **Landscape Card** | <a href="https://ishandutta2007.github.io/github-repo-growth/star-history/star-history"><img width="300" src="https://api.ishandutta2007.github.io/github-repo-growth/chart?repos=star-history/star-history&style=landscape1" /></a> | See below |
+| **Global Rank Badge** | <a href="https://ishandutta2007.github.io/github-repo-growth/star-history/star-history"><img src="https://api.ishandutta2007.github.io/github-repo-growth/badge?repo=star-history/star-history" /></a> | See below |
 
 #### Standard Chart Snippet
 ```html
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=star-history/star-history&type=date&theme=dark&legend=top-left" />
-  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=star-history/star-history&type=date&legend=top-left" />
-  <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=star-history/star-history&type=date&legend=top-left" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.ishandutta2007.github.io/github-repo-growth/chart?repos=star-history/star-history&type=date&theme=dark&legend=top-left" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.ishandutta2007.github.io/github-repo-growth/chart?repos=star-history/star-history&type=date&legend=top-left" />
+  <img alt="Star History Chart" src="https://api.ishandutta2007.github.io/github-repo-growth/chart?repos=star-history/star-history&type=date&legend=top-left" />
 </picture>
 ```
 
 #### Landscape Card Snippet
 ```html
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=star-history/star-history&style=landscape1&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=star-history/star-history&style=landscape1" />
-  <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=star-history/star-history&style=landscape1" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.ishandutta2007.github.io/github-repo-growth/chart?repos=star-history/star-history&style=landscape1&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.ishandutta2007.github.io/github-repo-growth/chart?repos=star-history/star-history&style=landscape1" />
+  <img alt="Star History Chart" src="https://api.ishandutta2007.github.io/github-repo-growth/chart?repos=star-history/star-history&style=landscape1" />
 </picture>
 ```
 
 #### Global Rank Badge Snippet
 ```html
-<a href="https://star-history.com/star-history/star-history">
-  <img alt="Star History Rank" src="https://api.star-history.com/badge?repo=star-history/star-history" />
+<a href="https://ishandutta2007.github.io/github-repo-growth/star-history/star-history">
+  <img alt="Star History Rank" src="https://api.ishandutta2007.github.io/github-repo-growth/badge?repo=star-history/star-history" />
 </a>
 ```
 
@@ -51,7 +51,7 @@ You can embed live charts and badges directly into your GitHub README or website
 
 ## 🌠 Screenshots
 
-<a href="https://star-history.com"><img width="800px" src="https://user-images.githubusercontent.com/24653555/154391264-312b448b-f851-41bf-bb8d-4c21ec6795b6.gif" />
+<a href="https://ishandutta2007.github.io/github-repo-growth"><img width="800px" src="https://user-images.githubusercontent.com/24653555/154391264-312b448b-f851-41bf-bb8d-4c21ec6795b6.gif" />
 </a>
 
 ### 🧩 [Free chrome extension](https://chrome.google.com/webstore/detail/star-history/iijibbcdddbhokfepbblglfgdglnccfn)
@@ -79,7 +79,7 @@ node gh/star-generate-cli.js
 
 ### 2. Frontend
 
-The main website at [star-history.com](https://star-history.com).
+The main website at [ishandutta2007.github.io/github-repo-growth](https://ishandutta2007.github.io/github-repo-growth).
 
 ```shell
 cd frontend

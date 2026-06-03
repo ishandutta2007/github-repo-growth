@@ -7,7 +7,7 @@ publishedDate: "2026-02-13T12:00:00.000Z"
 description: "A categorized overview of the OpenClaw ecosystem: the skill catalog, the core toolkit, three deployment architectures, and the agent browser that ties it all together."
 ---
 
-**[OpenClaw](https://github.com/openclaw/openclaw)**, an open-source, locally-run AI agent, went from a weekend project to over 199,000 GitHub stars in just ten weeks — drawing two million website visitors in a single week. Peter, the project's creator, embedded the [Star History chart](https://star-history.com/#openclaw/openclaw&Date) in OpenClaw's README to show the speed of its rise, and the chart speaks for itself.
+**[OpenClaw](https://github.com/openclaw/openclaw)**, an open-source, locally-run AI agent, went from a weekend project to over 199,000 GitHub stars in just ten weeks — drawing two million website visitors in a single week. Peter, the project's creator, embedded the [Star History chart](https://ishandutta2007.github.io/github-repo-growth/#openclaw/openclaw&Date) in OpenClaw's README to show the speed of its rise, and the chart speaks for itself.
 
 ![openclaw-star-history](/assets/blog/clawflare/openclaw-star-history.webp)
 
@@ -39,7 +39,7 @@ Unlike monolithic AI assistants, OpenClaw is a privacy-first gateway that connec
 
 🔗 [https://github.com/VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=VoltAgent/awesome-openclaw-skills\&type=Date)](https://star-history.com/#VoltAgent/awesome-openclaw-skills&Date)
+[![Star History Chart](https://api.ishandutta2007.github.io/github-repo-growth/svg?repos=VoltAgent/awesome-openclaw-skills\&type=Date)](https://ishandutta2007.github.io/github-repo-growth/#VoltAgent/awesome-openclaw-skills&Date)
 
 The OpenClaw skill registry, ClawHub, now lists over 3,000 community-built skills. That's the good news. The bad news is that a significant number of them are spam, duplicates, or outright malicious. `awesome-openclaw-skills` is the community's answer: a curated, categorized, and security-audited list that filters the registry down to what's actually worth installing.
 
@@ -61,7 +61,7 @@ The OpenClaw skill registry, ClawHub, now lists over 3,000 community-built skill
 
 🔗 [https://github.com/badlogic/pi-mono](https://github.com/badlogic/pi-mono)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=badlogic/pi-mono\&type=Date)](https://star-history.com/#badlogic/pi-mono&Date)
+[![Star History Chart](https://api.ishandutta2007.github.io/github-repo-growth/svg?repos=badlogic/pi-mono\&type=Date)](https://ishandutta2007.github.io/github-repo-growth/#badlogic/pi-mono&Date)
 
 `pi-mono` is the heart of the OpenClaw ecosystem. Created by Mario Zechner, it provides the foundational components upon which OpenClaw itself is built. Its core, an agent named "Pi" is a masterclass in minimalism, equipped with just four tools: `Read`, `Write`, `Edit`, and `Bash`.
 
@@ -85,7 +85,7 @@ By early 2026, the deployment landscape has split into three camps, each represe
 
 🔗 [https://github.com/cloudflare/moltworker](https://github.com/cloudflare/moltworker)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=cloudflare/moltworker\&type=Date)](https://star-history.com/#cloudflare/moltworker&Date)
+[![Star History Chart](https://api.ishandutta2007.github.io/github-repo-growth/svg?repos=cloudflare/moltworker\&type=Date)](https://ishandutta2007.github.io/github-repo-growth/#cloudflare/moltworker&Date)
 
 Cloudflare's official OpenClaw deployment runs the agent in a Sandbox container on their global network. It comes with a web-based control UI, multi-platform chat support (Telegram, Discord, Slack), device pairing authentication, and persistent conversation history. It is, for all practical purposes, your own always-on AI assistant running at the edge.
 
@@ -107,7 +107,7 @@ Cloudflare's official OpenClaw deployment runs the agent in a Sandbox container 
 
 🔗 [https://github.com/memovai/mimiclaw](https://github.com/memovai/mimiclaw)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=memovai/mimiclaw\&type=Date)](https://star-history.com/#memovai/mimiclaw&Date)
+[![Star History Chart](https://api.ishandutta2007.github.io/github-repo-growth/svg?repos=memovai/mimiclaw\&type=Date)](https://ishandutta2007.github.io/github-repo-growth/#memovai/mimiclaw&Date)
 
 At the opposite end of the spectrum from `moltworker` lies `mimiclaw`. This project is a remarkable feat of engineering: a complete reimplementation of the OpenClaw agent architecture in pure C, designed to run on a tiny, $5 ESP32-S3 microcontroller.
 
@@ -127,7 +127,7 @@ At the opposite end of the spectrum from `moltworker` lies `mimiclaw`. This proj
 
 🔗 [https://github.com/SawyerHood/gitclaw](https://github.com/SawyerHood/gitclaw)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=SawyerHood/gitclaw\&type=Date)](https://star-history.com/#SawyerHood/gitclaw&Date)
+[![Star History Chart](https://api.ishandutta2007.github.io/github-repo-growth/svg?repos=SawyerHood/gitclaw\&type=Date)](https://ishandutta2007.github.io/github-repo-growth/#SawyerHood/gitclaw&Date)
 
 `gitclaw` runs an OpenClaw assistant entirely within GitHub Actions. You interact with it by opening Issues and leaving comments. The agent's memory, conversation history, and state are all committed to the Git repository itself — giving it persistent, searchable, version-controlled memory across sessions.
 
@@ -149,7 +149,7 @@ At the opposite end of the spectrum from `moltworker` lies `mimiclaw`. This proj
 
 🔗 [https://github.com/jo-inc/camofox-browser](https://github.com/jo-inc/camofox-browser)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=jo-inc/camofox-browser\&type=Date)](https://star-history.com/#jo-inc/camofox-browser&Date)
+[![Star History Chart](https://api.ishandutta2007.github.io/github-repo-growth/svg?repos=jo-inc/camofox-browser\&type=Date)](https://ishandutta2007.github.io/github-repo-growth/#jo-inc/camofox-browser&Date)
 
 Here's the problem: you give your agent tools to browse the web, and it immediately gets blocked by Cloudflare, Google, and every other bot-detection system. Stealth plugins? They become detectable fingerprints themselves. `camofox-browser` solves this at the deepest level — it's a headless browser server built on Camoufox (a Firefox fork) that implements anti-detection at the C++ level, not through JavaScript shims.
 

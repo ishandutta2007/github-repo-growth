@@ -8,5 +8,5 @@ export const EASTER_EGG_REPOS = new Set(["openclaw/openclaw"])
 
 export const SITE_URL = "https://ishandutta2007.github.io/github-repo-growth"
 export const BASE_PATH = "/github-repo-growth"
-export const API_URL = "https://api.star-history.com"
-export const NEWSLETTER_URL = "https://newsletter.star-history.com/subscribe"
+export const API_URL = "https://api.ishandutta2007.github.io/github-repo-growth"
+export const NEWSLETTER_URL = "https://newsletter.ishandutta2007.github.io/github-repo-growth/subscribe"

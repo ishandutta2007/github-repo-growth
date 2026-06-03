@@ -9,4 +9,4 @@ description: "OpenClaw has surpassed Linux to claim the #14 spot on GitHub's all
 
 OpenClaw has officially crossed a milestone: with 224K+ stars, it has surpassed the Linux kernel (218K) to become the 14th most-starred repository on GitHub — the fastest star growth in GitHub history. Among non-aggregator software projects, OpenClaw now trails only React (243K) — and at this rate, it might not hold that lead for long.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=facebook/react,openclaw/openclaw,torvalds/linux&type=Date)](https://star-history.com/#facebook/react&openclaw/openclaw&torvalds/linux&Date)
+[![Star History Chart](https://api.ishandutta2007.github.io/github-repo-growth/svg?repos=facebook/react,openclaw/openclaw,torvalds/linux&type=Date)](https://ishandutta2007.github.io/github-repo-growth/#facebook/react&openclaw/openclaw&torvalds/linux&Date)
