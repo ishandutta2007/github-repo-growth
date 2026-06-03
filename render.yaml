@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: star-history-api
+    env: node
+    plan: free
+    region: oregon
+    # Use the root package.json for initial install, then build backend
+    buildCommand: pnpm install && cd backend && pnpm install
+    startCommand: cd backend && ./node_modules/.bin/tsx main.ts
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: PORT
+        value: 8080
+    secretFiles:
+      - key: token.env
+        path: backend/token.env
