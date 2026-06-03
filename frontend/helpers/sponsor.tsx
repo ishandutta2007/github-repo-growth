@@ -20,33 +20,41 @@ interface Sponsor {
 // The list of current sponsors.
 const sponsors: Sponsor[] = [
     {
-      name: "Bytebase",
-      logo: utils.absolutifyLink(`${BASE_PATH}/assets/ft/bytebase/logo.webp`),
-      landingImage: utils.absolutifyLink(`${BASE_PATH}/assets/ft/bytebase/landing.webp`),
-      link: "https://bytebase.com?utm_source=star-history",
-      logoSlogan:
-        "Bytebase: Database DevSecOps for MySQL, PG, Oracle, SQL Server, Snowflake, ClickHouse, Mongo, Redis",
-      landingSlogan:
-        "Database DevSecOps for MySQL, PG, Oracle, SQL Server, Snowflake, ClickHouse, Mongo, Redis",
-    },
-    // 2026.12.31
-    {
-        name: "Dify",
-        logo: utils.absolutifyLink(`${BASE_PATH}/assets/ft/dify/logo.webp`),
-        landingImage: utils.absolutifyLink(`${BASE_PATH}/assets/ft/dify/landing.webp`),
-        link: "https://dify.ai/?utm_source=star-history",
-        logoSlogan: "Dify: Open-source platform for building LLM apps, from agents to AI workflows.",
-        landingSlogan: "Open-source platform for building LLM apps, from agents to AI workflows."
-    },
-    // 2027.02.20
-    {
-        name: "SerpApi",
-        logo: utils.absolutifyLink(`${BASE_PATH}/assets/ft/serpapi/logo.webp`),
-        landingImage: utils.absolutifyLink(`${BASE_PATH}/assets/ft/serpapi/landing.webp`),
-        link: "https://serpapi.com/?utm_source=starhistory",
-        logoSlogan: "Scrape search engine results easily using a simple API, including Google, Google Maps, Amazon, and more!",
-        landingSlogan: "Scrape search engine results easily using a simple API, including Google, Google Maps, Amazon, and more!"
-    },
+        name: "Top-AI-repos",
+        logo: utils.absolutifyLink(`${BASE_PATH}/assets/ft/topairepos/logo.png`),
+        landingImage: utils.absolutifyLink(`${BASE_PATH}/assets/ft/topairepos/landing.png`),
+        link: "https://github.com/ishandutta2007/Top-AI-repos",
+        logoSlogan: " Top-AI-Repos: Discover the Best Open-Source AI/ML Projects on GitHub.",
+        landingSlogan: "100 most popular open source AI projects."
+    }
+    // {
+    //   name: "Bytebase",
+    //   logo: utils.absolutifyLink(`${BASE_PATH}/assets/ft/bytebase/logo.webp`),
+    //   landingImage: utils.absolutifyLink(`${BASE_PATH}/assets/ft/bytebase/landing.webp`),
+    //   link: "https://bytebase.com?utm_source=star-history",
+    //   logoSlogan:
+    //     "Bytebase: Database DevSecOps for MySQL, PG, Oracle, SQL Server, Snowflake, ClickHouse, Mongo, Redis",
+    //   landingSlogan:
+    //     "Database DevSecOps for MySQL, PG, Oracle, SQL Server, Snowflake, ClickHouse, Mongo, Redis",
+    // },
+    // // 2026.12.31
+    // {
+    //     name: "Dify",
+    //     logo: utils.absolutifyLink(`${BASE_PATH}/assets/ft/dify/logo.webp`),
+    //     landingImage: utils.absolutifyLink(`${BASE_PATH}/assets/ft/dify/landing.webp`),
+    //     link: "https://dify.ai/?utm_source=star-history",
+    //     logoSlogan: "Dify: Open-source platform for building LLM apps, from agents to AI workflows.",
+    //     landingSlogan: "Open-source platform for building LLM apps, from agents to AI workflows."
+    // },
+    // // 2027.02.20
+    // {
+    //     name: "SerpApi",
+    //     logo: utils.absolutifyLink(`${BASE_PATH}/assets/ft/serpapi/logo.webp`),
+    //     landingImage: utils.absolutifyLink(`${BASE_PATH}/assets/ft/serpapi/landing.webp`),
+    //     link: "https://serpapi.com/?utm_source=starhistory",
+    //     logoSlogan: "Scrape search engine results easily using a simple API, including Google, Google Maps, Amazon, and more!",
+    //     landingSlogan: "Scrape search engine results easily using a simple API, including Google, Google Maps, Amazon, and more!"
+    // },
     // {
     //   name: "DBHub",
     //   logo: utils.absolutifyLink("/assets/ft/dbhub/logo.webp"),
