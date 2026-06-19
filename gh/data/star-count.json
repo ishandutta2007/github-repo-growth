@@ -1,0 +1,60 @@
+{
+  "updated_at": "Jun 2, 2026",
+  "tiers": [
+    {
+      "threshold": 100000,
+      "label": "100K+",
+      "count": 87
+    },
+    {
+      "threshold": 50000,
+      "label": "50K+",
+      "count": 374
+    },
+    {
+      "threshold": 20000,
+      "label": "20K+",
+      "count": 1923
+    },
+    {
+      "threshold": 10000,
+      "label": "10K+",
+      "count": 4945
+    },
+    {
+      "threshold": 5000,
+      "label": "5K+",
+      "count": 11315
+    },
+    {
+      "threshold": 3000,
+      "label": "3K+",
+      "count": 19964
+    },
+    {
+      "threshold": 1000,
+      "label": "1K+",
+      "count": 59839
+    },
+    {
+      "threshold": 500,
+      "label": "500+",
+      "count": 114147
+    },
+    {
+      "threshold": 100,
+      "label": "100+",
+      "count": 444532
+    },
+    {
+      "threshold": 1,
+      "label": "1+",
+      "count": 28554787
+    },
+    {
+      "threshold": 0,
+      "label": "0+",
+      "count": 284752567
+    }
+  ]
+}

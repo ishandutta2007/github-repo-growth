@@ -1,0 +1,85 @@
+{
+  "updated_at": "Jun 2, 2026",
+  "repos": [
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "stars_total": 470447
+    },
+    {
+      "name": "sindresorhus/awesome",
+      "stars_total": 441785
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "stars_total": 437670
+    },
+    {
+      "name": "public-apis/public-apis",
+      "stars_total": 402511
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "stars_total": 383488
+    },
+    {
+      "name": "kamranahmedse/developer-roadmap",
+      "stars_total": 349992
+    },
+    {
+      "name": "jwasham/coding-interview-university",
+      "stars_total": 337530
+    },
+    {
+      "name": "donnemartin/system-design-primer",
+      "stars_total": 337076
+    },
+    {
+      "name": "vinta/awesome-python",
+      "stars_total": 285181
+    },
+    {
+      "name": "awesome-selfhosted/awesome-selfhosted",
+      "stars_total": 276077
+    },
+    {
+      "name": "996icu/996.ICU",
+      "stars_total": 275597
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "stars_total": 259848
+    },
+    {
+      "name": "openclaw/openclaw",
+      "stars_total": 245741
+    },
+    {
+      "name": "facebook/react",
+      "stars_total": 243411
+    },
+    {
+      "name": "torvalds/linux",
+      "stars_total": 220151
+    },
+    {
+      "name": "TheAlgorithms/Python",
+      "stars_total": 218255
+    },
+    {
+      "name": "vuejs/vue",
+      "stars_total": 209933
+    },
+    {
+      "name": "trimstray/the-book-of-secret-knowledge",
+      "stars_total": 208340
+    },
+    {
+      "name": "ossu/computer-science",
+      "stars_total": 202026
+    },
+    {
+      "name": "trekhleb/javascript-algorithms",
+      "stars_total": 195704
+    }
+  ]
+}

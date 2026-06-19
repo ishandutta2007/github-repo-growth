@@ -3,13 +3,14 @@ import * as process from "process";
 import logger from "./logger.js";
 import api from "../shared/common/api.js";
 
-// Token env file path in render.com: All secret files you create are available to read at the root of your repo.
-const ENV_PATH_IN_RENDER = "./token.env";
-// For local dev, you need to pass the ENVPATH value in env variables.
-// e.g. ENVPATH=PATH_TO_YOUR_FILE pnpm dev
-// For production, we set a token.env file in render.com,
-// and the copy of the file is stored at https://github.com/bytebase/secret/tree/master/token/star-history.
-const envFilePath = process.env.ENVPATH || ENV_PATH_IN_RENDER;
+// Try multiple paths to find the token.env file
+const possiblePaths = [
+  process.env.ENVPATH,
+  "./token.env", // If placed in backend/
+  "../token.env", // If placed in the root of the repo (common on Render)
+].filter(Boolean) as string[];
+
+let envFilePath = "";
 
 const savedTokens: string[] = [];
 let index = 0;
@@ -19,8 +20,15 @@ const COOLDOWN_MS = 15 * 60 * 1000;
 const exhaustedUntil = new Map<string, number>();
 
 export const initTokenFromEnv = async () => {
-  if (!fs.existsSync(envFilePath)) {
-    logger.error("Token file not found with path ", envFilePath);
+  for (const p of possiblePaths) {
+    if (fs.existsSync(p)) {
+      envFilePath = p;
+      break;
+    }
+  }
+
+  if (!envFilePath) {
+    logger.error("Token file not found. Tried: ", possiblePaths.join(", "));
     process.exit(-1);
   }
   const envTokenString = fs.readFileSync(envFilePath).toString();
@@ -32,11 +40,13 @@ export const initTokenFromEnv = async () => {
   const tokenList = envTokenString.split(/\r?\n/);
   // Call GitHub API to check token usability
   for (const token of tokenList) {
+    const trimmed = token.trim();
+    if (!trimmed) continue;
     try {
-      await api.getRepoStargazersCount("star-history/star-history", token);
-      savedTokens.push(token);
+      await api.getRepoStargazersCount("star-history/star-history", trimmed);
+      savedTokens.push(trimmed);
     } catch (error) {
-      logger.error(`Token ${token.slice(0, 8)}...${token.slice(-4)} is unusable`, error);
+      logger.error(`Token ${trimmed.slice(0, 8)}...${trimmed.slice(-4)} is unusable`, error);
     }
   }
 
