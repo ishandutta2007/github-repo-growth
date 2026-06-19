@@ -2,7 +2,8 @@
 *.bk
 *.env
 .cache
+.next/
 __pycache__/
 contributors.txt
-temp_repo_clone
 node_modules/
+temp_repo_clone
